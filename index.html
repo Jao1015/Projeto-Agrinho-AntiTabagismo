@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciência sobre o Uso de Cigarros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Consciência Sobre o Uso de Cigarros</h1>
+        <nav>
+            <ul>
+                <li><a href="#maleficios">Malefícios</a></li>
+                <li><a href="#estudos">Estudos Científicos</a></li>
+                <li><a href="#citacoes">Citações Médicas</a></li>
+                <li><a href="#grafico">Gráfico</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#links">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Fumar Mata. Informe-se. Cuide-se.</h2>
+    </section>
+
+    <section id="maleficios" class="content">
+        <h2>Malefícios do Cigarro</h2>
+        <p>O cigarro contém mais de 7.000 substâncias químicas, das quais cerca de 70 são comprovadamente cancerígenas.</p>
+        <ul>
+            <li>🚫 Câncer de pulmão, boca, garganta e bexiga.</li>
+            <li>🚫 Doenças cardíacas e derrames.</li>
+            <li>🚫 Enfisema pulmonar e bronquite crônica.</li>
+            <li>🚫 Envelhecimento precoce e impotência sexual.</li>
+        </ul>
+    </section>
+
+    <section id="estudos" class="content">
+        <h2>Estudos Científicos</h2>
+        <p>
+            🔬 Segundo a <strong>Organização Mundial da Saúde (OMS)</strong>, o tabagismo é responsável por mais de <strong>8 milhões de mortes por ano no mundo</strong>.
+        </p>
+        <p>
+            📑 Um estudo publicado na revista <strong>"The Lancet"</strong> (2020) afirma que o tabagismo aumenta em até <strong>25 vezes</strong> o risco de câncer de pulmão.
+        </p>
+        <p>
+            🧠 Segundo o Instituto Nacional de Câncer (INCA), <strong>90% dos casos de câncer de pulmão</strong> estão relacionados ao uso de cigarro.
+        </p>
+    </section>
+
+    <section id="citacoes" class="content">
+        <h2>Citações de Médicos</h2>
+        <blockquote>
+            "Fumar é a principal causa evitável de morte no mundo. Cada cigarro encurta sua vida em aproximadamente 11 minutos." <br> 
+            <cite>— Dr. Drauzio Varella</cite>
+        </blockquote>
+        <blockquote>
+            "Não existe quantidade segura para o consumo de cigarro. Qualquer exposição é nociva à saúde." <br> 
+            <cite>— Dr. Richard Peto, epidemiologista de Oxford</cite>
+        </blockquote>
+        <blockquote>
+            "Parar de fumar é a melhor decisão que alguém pode tomar pela própria saúde e pela saúde de quem está ao redor." <br>
+            <cite>— Dr. Roberto Martins, pneumologista</cite>
+        </blockquote>
+    </section>
+
+    <section id="grafico" class="content">
+        <h2>Impacto do Tabagismo no Mundo</h2>
+        <canvas id="graficoMortes" width="400" height="200"></canvas>
+    </section>
+
+    <section id="videos" class="content">
+        <h2>Vídeos Educativos</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pU7OLpPuqy8?si=ce_rquogjBmnAocb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="links" class="content">
+        <h2>Links de Ajuda</h2>
+        <ul>
+            <li><a href="https://www.inca.gov.br/" target="_blank">Instituto Nacional de Câncer (INCA)</a></li>
+            <li><a href="https://www.who.int/" target="_blank">Organização Mundial da Saúde (OMS)</a></li>
+            <li><a href="https://www.saude.gov.br/" target="_blank">Ministério da Saúde do Brasil</a></li>
+        </ul>
+    </section>
+
+    <section id="ajuda" class="content">
+        <h2>Como Parar de Fumar</h2>
+        <p>🫶 Existem diversas formas de obter ajuda:</p>
+        <ul>
+            <li>✔️ Procure o serviço de saúde mais próximo.</li>
+            <li>✔️ Utilize terapias de reposição de nicotina (adesivos, chicletes).</li>
+            <li>✔️ Participe de grupos de apoio.</li>
+            <li>✔️ Busque acompanhamento psicológico.</li>
+            <li>✔️ Ligue para o <strong>Disque Saúde 136</strong> para orientações.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Consciência Sobre o Cigarro | Feito por João Vitor KF</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('graficoMortes').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Câncer de Pulmão', 'Doença Cardíaca', 'Derrame', 'DPOC', 'Outros'],
+                datasets: [{
+                    label: 'Mortes Anuais (em milhões)',
+                    data: [2.1, 1.8, 1.2, 0.9, 2.0],
+                    backgroundColor: [
+                        '#ff4d4d',
+                        '#ff6666',
+                        '#ff8080',
+                        '#ff9999',
+                        '#ffb3b3'
+                    ],
+                    borderColor: '#b30000',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

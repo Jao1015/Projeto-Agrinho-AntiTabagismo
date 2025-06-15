@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+.banner {
+    background-image: url('https://i.imgur.com/H5y9N5f.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    color: #b30000;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    color: #b30000;
+    text-decoration: underline;
+}
+
+.content ul li a:hover {
+    color: #ff4d4d;
+}
+
+blockquote {
+    border-left: 5px solid #b30000;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    color: #555;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Gráfico */
+canvas {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* Vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
