@@ -2,9 +2,6 @@
 
 Este é um site educativo desenvolvido com o objetivo de conscientizar as pessoas sobre os malefícios do tabagismo, baseado em dados científicos, estudos médicos e campanhas de saúde pública.
 
-## 🌐 Acesse o site
-👉 (Adicione aqui o link do GitHub Pages se publicar, ex.: https://seuusuario.github.io/nome-do-repositorio)
-
 ## 📝 Descrição
 O site contém:
 - Informações sobre os malefícios do cigarro;
